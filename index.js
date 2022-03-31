@@ -11,7 +11,7 @@ function proxyRotator(){
 let ip_addresses = [];
 let port_numbers = [];
 
-request("https://api.coolproxies.com/api.php?list=all&http=1&apikey=IEJQPS82K2U8888A", function(error, response, html) {
+request("http://sslproxies.com/", function(error, response, html) {
   if (!error && response.statusCode == 200) {
     const $ = cheerio.load(html);
 
