@@ -11,7 +11,7 @@ function proxyRotator(){
 let ip_addresses = [];
 let port_numbers = [];
 
-request("http://sslproxies.com/", function(error, response, html) {
+request("https://sslproxies.org/", function(error, response, html) {
   if (!error && response.statusCode == 200) {
     const $ = cheerio.load(html);
 
